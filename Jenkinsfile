@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    environtment{
-        AUTHOR="Eko Salvinus"
-
-    }
     stages {
         stage("Prepare") {
             steps {
