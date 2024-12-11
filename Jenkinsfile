@@ -2,9 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Dunia') {
+        stage("Build") {
             steps {
-                echo 'Halo Dunia'
+                echo "Start Build..."
+            }
+        }
+        stage("Test") {
+            steps {
+                echo "Start Test..."
+            }
+        }
+        stage("Deploy") {
+            steps {
+                echo "Start Deploy..."
             }
         }
     }
