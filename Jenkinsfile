@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    environtmen{
+    environtment{
         AUTHOR="Eko Salvinus"
 
     }
