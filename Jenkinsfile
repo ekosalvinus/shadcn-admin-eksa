@@ -2,6 +2,13 @@ pipeline {
     agent any
 
     stages {
+        stage("Prepare") {
+            steps {
+                echo "Start Job: ${env.JOB_NAME}"
+                echo "Build Number: ${env.BUILD_NUMBER}"
+                echo "Branch Name github: ${env.BRANCH_NAME}"
+            }
+        }
         stage("Build") {
             steps {
                 echo "Start Build..."
